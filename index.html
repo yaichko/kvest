@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>ФАВ</title>
+  </head>
+  <body style="background-image: url(bg1.jpg);">
+	  	<!--ДВЕРИ-->
+	  <div class="dveri">
+		   <img src="door.png" class="h-25 w-25 ml-5 door">
+		   <img src="door2.png" class="h-25 w-25 ml-5 door2">
+		   <img src="door3.png" class="h-25 w-25 ml-5 door3">
+	  </div>
+
+	<!--хогвартс-->
+	<div style="background-image: url(bg.jpg);background-size: 100% 100%; height:1200px; display:none" class="bg">
+		<h1 class="text-white">Найди мантию, волшебную палочку и метлу для Гарри</h1>
+		<h1 class="text-white ochki">0</h1>
+		<div class="bg-warning border text-center rounded exit" style="width:150px;margin-left:50px">
+			Назад к дверям
+		</div>
+		<img src="gun.png" alt="" style="height: 100px;margin-top:700px;position: absolute;" class="wrong">
+		<img src="metla.png" alt="" style="height: 100px; margin-left:300px; margin-top:400px;position: absolute;"  class="correct">
+		<img src="palochka.png" alt="" style="height: 100px; margin-left:400px; margin-top:700px;position: absolute;"  class="correct1">
+		<img src="mantiya.png" alt="" style="height: 100px; margin-left:900px; margin-top:800px;position: absolute;"  class="correct2">
+		<img src="ring.png" alt="" style="height: 50px; margin-left:800px; margin-top:800px;position: absolute;"  class="wrong">
+	</div>
+
+	<!--магазин-->
+	<div style="background-image: url(magaz.jpg);background-size: 100% 100%; height:1200px; display:none" class="bg1">
+		<h1 class="text-white">Бери продукты по списку</h1>
+		<h1 class="text-white ochki1">0</h1>
+		<div class="bg-warning border text-center rounded exit1" style="width:150px;margin-left:50px">
+			Назад к дверям
+		</div>
+		<img src="bread.png" alt="" style="height: 100px;margin-top:600px;position: absolute;" class="correct6">
+		<img src="milk.png" alt="" style="height: 100px; margin-left:300px; margin-top:400px;position: absolute;"  class="correct3">
+		<img src="egg.png" alt="" style="height: 100px; margin-left:400px; margin-top:500px;position: absolute;"  class="correct4">
+		<img src="headcrab.png" alt="" style="height: 100px; margin-left:900px; margin-top:800px;position: absolute;"  class="correct5">
+		<img src="potato.png" alt="" style="height: 100px; margin-left:1000px; margin-top:450px;position: absolute;"  class="wrong">
+		<img src="cat.png" alt="" style="height: 100px; margin-left:400px; margin-top:700px;position: absolute;"  class="wrong">
+		<img src="coffee.png" alt="" style="height: 100px; margin-left:850px; margin-top:630px;position: absolute;"  class="wrong">
+	</div>
+
+
+
+
+	<div style="background-image: url(shahti.jpg);background-size: 100% 100%; height:1200px; display:none" class="bg2">
+		<h1 class="text-white">УГОЛЬ</h1>
+		<h1 class="text-white ochki2">0</h1>
+		<div class="bg-warning border text-center rounded exit1" style="width:150px;margin-left:50px">
+			Назад к дверям
+		</div>
+		<img src="coal.png" alt="" style="height: 100px;margin-top:640px;position: absolute;" class="correct7">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:700px; margin-top:400px;position: absolute;"  class="correct8">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:480px; margin-top:50px;position: absolute;"  class="correct9">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:900px; margin-top:800px;position: absolute;"  class="correct10">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:1000px; margin-top:450px;position: absolute;"  class="correct11">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:590px; margin-top:700px;position: absolute;"  class="correct12">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:850px; margin-top:630px;position: absolute;"  class="correct13">
+		<img src="coal.png" alt="" style="height: 100px;margin-top:600px;position: absolute;" class="correct14">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:1300px; margin-top:800px;position: absolute;"  class="correct15">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:430px; margin-top:500px;position: absolute;"  class="correct16">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:1000px; margin-top:800px;position: absolute;"  class="correct17">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:1000px; margin-top:450px;position: absolute;"  class="correct18">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:400px; margin-top:700px;position: absolute;"  class="correct19">
+		<img src="coal.png" alt="" style="height: 100px; margin-left:850px; margin-top:630px;position: absolute;"  class="correct20">
+
+	</div>
+
+
+   <!--СКРИПТ-->
+	<script type="text/javascript">
+		let score = 0
+		let score1 = 0
+		let score2 = 0
+
+		
+
+		document.querySelector(".door").onclick = function() {
+			alert('На удивление ты в Хогвартсе')
+			document.querySelector(".bg").style.display = "block"
+			document.querySelector(".dveri").style.display = "none"
+	
+		}
+
+
+		document.querySelector(".door2").onclick = function() {
+			alert('Список покупок: яйца,хлеб,молоко,жареный хэдкраб')
+			document.querySelector(".bg1").style.display = "block"
+			document.querySelector(".dveri").style.display = "none"
+		}
+		
+
+		document.querySelector(".door3").onclick = function() {
+			alert('КОПАЙ УГОЛЬ 25/8')
+			document.querySelector(".bg2").style.display = "block"
+			document.querySelector(".dveri").style.display = "none"
+		}
+
+		document.querySelector(".correct").onclick = function() {
+			score = score + 1
+			document.querySelector(".ochki").innerHTML = score
+			document.querySelector(".correct").style.display = "none"
+
+		}
+
+		document.querySelector(".correct1").onclick = function() {
+			score = score + 1
+			document.querySelector(".ochki").innerHTML = score
+			document.querySelector(".correct1").style.display = "none"
+
+
+		}
+
+		document.querySelector(".correct2").onclick = function() {
+			score = score + 1
+			document.querySelector(".ochki").innerHTML = score
+			document.querySelector(".correct2").style.display = "none"
+
+		}
+
+		document.querySelector(".exit").onclick = function() {
+			document.querySelector(".bg").style.display = "none";
+			document.querySelector(".dveri").style.display = "block";
+
+		}
+		document.querySelector(".exit1").onclick = function() {
+			document.querySelector(".bg1").style.display = "none";
+			document.querySelector(".dveri").style.display = "block";
+
+		}
+		document.querySelector(".correct3").onclick = function() {
+			score1 = score1 + 1
+			document.querySelector(".ochki1").innerHTML = score1
+			document.querySelector(".correct3").style.display = "none"
+		}
+
+		document.querySelector(".correct4").onclick = function() {
+			score1 = score1 + 1
+			document.querySelector(".ochki1").innerHTML = score1
+			document.querySelector(".correct4").style.display = "none"
+
+
+		}
+
+		document.querySelector(".correct5").onclick = function() {
+			score1 = score1 + 1
+			document.querySelector(".ochki1").innerHTML = score1
+			document.querySelector(".correct5").style.display = "none"
+
+		}
+		document.querySelector(".correct6").onclick = function() {
+			score1 = score1 + 1
+			document.querySelector(".ochki1").innerHTML = score1
+			document.querySelector(".correct6").style.display = "none"
+
+		}
+		document.querySelector(".correct7").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct7").style.display = "none"
+
+		}
+		document.querySelector(".correct8").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct8").style.display = "none"
+
+		}
+		document.querySelector(".correct9").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct9").style.display = "none"
+
+		}
+		document.querySelector(".correct10").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct10").style.display = "none"
+
+		}
+		document.querySelector(".correct11").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correc11").style.display = "none"
+
+		}
+		document.querySelector(".correct12").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct12").style.display = "none"
+
+		}
+		document.querySelector(".correct13").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct13").style.display = "none"
+
+		}
+		document.querySelector(".correct14").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correc14").style.display = "none"
+
+		}
+		document.querySelector(".correct15").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct15").style.display = "none"
+
+		}
+		document.querySelector(".correct16").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct16").style.display = "none"
+
+		}
+		document.querySelector(".correct17").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correc17").style.display = "none"
+
+		}
+		document.querySelector(".correct18").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct18").style.display = "none"
+
+		}
+		document.querySelector(".correct19").onclick = function() {
+			score2 = score2 + 1
+			document.querySelector(".ochki2").innerHTML = score2
+			document.querySelector(".correct19").style.display = "none"
+
+		}
+		
+	</script>
+  </body>
+</html>
